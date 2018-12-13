@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AfficheurSommets.cs" />
     <Compile Include="Assets\Scripts\BordureTexture.cs" />
     <Compile Include="Assets\Scripts\ContrôleFlipper.cs" />
     <Compile Include="Assets\Scripts\ControlleurLanceur.cs" />
@@ -287,9 +288,6 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.0b9/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>C:/Users/Antoine/Desktop/Poulin Antoine - Morency Samuel - PFI 2/Library/PackageCache/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/Antoine/Desktop/Poulin Antoine - Morency Samuel - PFI 2/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Editor.dll</HintPath>

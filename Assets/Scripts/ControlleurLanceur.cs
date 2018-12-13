@@ -11,12 +11,6 @@ public class ControlleurLanceur : MonoBehaviour
     float TailleMax;
     [SerializeField]
     float ForceLanceur;
-    
-  
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
