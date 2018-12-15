@@ -90,7 +90,7 @@ public class GénérateurBille : MonoBehaviour
                     //Top triangle
                     ListeTriangles[cptPosTriangle++] = i * NbPoints + j + 1;
                     ListeTriangles[cptPosTriangle++] = i * NbPoints + 1;    //Revenir au premier point
-                    ListeTriangles[cptPosTriangle++] = (i + 1) * NbPoints + 1; //Revenir au premier point bottom
+                    ListeTriangles[cptPosTriangle++] = (i + 1) * NbPoints + i + 1; //Revenir au premier point bottom
 
                     //Bottom triangle
                     ListeTriangles[cptPosTriangle++] = i * NbPoints + 1; //Revenir au premier point
