@@ -81,21 +81,21 @@ public class GénérateurBille : MonoBehaviour
         }
 
         //Body de la bille
-        for(int i = 0; i < NbParalleles - 1; i++) //Cpt pour les paralleles
+        for(int i = 0; i < NbParalleles - 1; i++) // i = Cpt pour les paralleles
         {
-            for(int j = 0; j < NbPoints; j++) //Cpt pour les points
+            for(int j = 0; j < NbPoints; j++) //j = Cpt pour les points
             {
                 if(j == NbPoints - 1)
                 {
                     //Top triangle
                     ListeTriangles[cptPosTriangle++] = i * NbPoints + j + 1;
                     ListeTriangles[cptPosTriangle++] = i * NbPoints + 1;    //Revenir au premier point
-                    ListeTriangles[cptPosTriangle++] = (i + 1) * NbPoints + i + 1; //Revenir au premier point bottom
+                    ListeTriangles[cptPosTriangle++] = (i + 1) * NbPoints + j + 1; //Revenir au premier point bottom
 
                     //Bottom triangle
                     ListeTriangles[cptPosTriangle++] = i * NbPoints + 1; //Revenir au premier point
                     ListeTriangles[cptPosTriangle++] = (i + 1) * NbPoints + 1; //Revenir au premier point bottom
-                    ListeTriangles[cptPosTriangle++] = (i + 1) * NbPoints + 1;
+                    ListeTriangles[cptPosTriangle++] = (i + 1) * NbPoints + j + 1;
                 }
 
                 else
