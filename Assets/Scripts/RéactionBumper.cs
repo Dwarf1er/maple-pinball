@@ -12,6 +12,5 @@ public class RéactionBumper : MonoBehaviour
       Vector3 directionForce = -collision.contacts[0].normal;
       Debug.DrawRay(collision.contacts[0].point, directionForce, Color.red, 100);
       collision.rigidbody.AddForce(directionForce * force, ForceMode.VelocityChange);
-
    }
 }
