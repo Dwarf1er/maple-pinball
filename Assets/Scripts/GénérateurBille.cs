@@ -3,8 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteInEditMode]
+[RequireComponent(typeof(MeshFilter))]
+[RequireComponent(typeof(MeshRenderer))]
+[RequireComponent(typeof(SphereCollider))]
 public class GénérateurBille : MonoBehaviour
 {
+    
     [SerializeField] int NbParalleles;
     [SerializeField] int NbPoints; //Le nombre de points sur chaque parallele
     [SerializeField] float Rayon;
@@ -16,8 +21,11 @@ public class GénérateurBille : MonoBehaviour
 
     void Awake()
     {
+        
         GénérerMaillage();
         GetComponent<Rigidbody>().maxAngularVelocity = VitesseMax;
+        GetComponent<SphereCollider>().radius = Rayon;
+
     }
 
     void GénérerMaillage()
@@ -130,5 +138,13 @@ public class GénérateurBille : MonoBehaviour
                 ListeTriangles[cptPosTriangle++] = Sommets.Length - 1; //"Pole Sud"
             }
         }
+    }
+
+   
+    void OnValidate()
+    {
+        Sommets = null;
+        ListeTriangles = null;
+        Awake();
     }
 }
