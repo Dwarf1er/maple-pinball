@@ -23,11 +23,11 @@ This game has 2 available builds: a build for desktop on Windows available in th
 
 ### Windows Build
 
-Download the latest build by clicking [here](https://github.com/Dwarf1er/COVIDBoy/releases/)
+Download the latest build by clicking [here](https://github.com/Dwarf1er/maple-pinball/releases/)
 
 ### WebGL Build In Your Browser
 
-To play COVIDBoy in your web browser click [here](https://dwarf1er.github.io/COVIDBoy/)
+To play maple-pinball in your web browser click [here](https://dwarf1er.github.io/maple-pinball/)
 
 ### Prerequisites
  
